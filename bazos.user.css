@@ -34,9 +34,6 @@ body , html {
     color: #FF6600;
     font-size: 40px;
 }
-.sirka {
-    max-width: 1400px;
-}
 .listah {
     background-color: #141312;
     margin: 3px;
@@ -308,7 +305,7 @@ td.barevne {
     background-color: #1d1d1d !important;
 }
 
-a .obrazek , table.inzeraty::before{
+.inzeratynadpis img , table.inzeraty::before{
 float: left;
 height: 100% !important;
 border:none !important;
@@ -333,7 +330,7 @@ table.inzeraty::before{
     object-fit: cover;
 }
 
-table.inzeraty{
+.inzeratyflex{
     
     position:relative;
     padding-left:220px;
@@ -361,25 +358,29 @@ div[align="left"]:last-child{
 .sirka>a , .sirka {font-size:0;}
 .sirka {
     
-    max-width:100000px;
+    max-width:100000px !important;
 }
 
-.sirka>table , .drobky  , .sirka>.icontbl{
+.sirka>.flexmain , .drobky  , .sirka>.icontblrow{
     
-    max-width:1500px;
+    max-width:1500px !important;
     margin:0 auto;
-}
-
-.listalogo{
-    
-    background: linear-gradient(to right, #141e30, #243b55);
-    margin-bottom:40px;
 }
 
 .listalogor{
-    display:block;
-    max-width:1500px;
+    
+    background: linear-gradient(to right, #141e30, #243b55);
+
+}
+
+.listalogor{
+
+    display:flex;
     margin:0 auto;
+    margin-bottom:75px;
+    margin-top:75px;
+    padding:30px;
+    align-items:center;
 }
 
 .act{
@@ -403,4 +404,10 @@ div[align="left"]:last-child{
  border:none;
  padding:5px 10px;
 }
+    
+    .oranzovy{
+        background:none;
+        border-color:#CC3333;
+        padding:15px;
+    }
 }
