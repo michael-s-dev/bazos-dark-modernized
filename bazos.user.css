@@ -67,7 +67,7 @@ a {
     line-height: 56px;
     color: #aaa;
 }
-.icontblcell1,
+.icontblcell,
 .icontblcell2 {
     display: table-cell;
     padding: 8px;
@@ -76,14 +76,14 @@ a {
     background: #0606062C;
     border: 20px solid #222;
     cursor: pointer;
-    transition: all 0.3s;
+    transition: transform 0.3s ease;
 }
-.icontblcell1:hover,
+.icontblcell:hover,
 .icontblcell2:hover {
     transform: scale(1.05);
 }
 
-.icontblcell1:hover span a,
+.icontblcell:hover span a,
 .icontblcell2:hover span a{
     color:#4a6 !important;
 }
